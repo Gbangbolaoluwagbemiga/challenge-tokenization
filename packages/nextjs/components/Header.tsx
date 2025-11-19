@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { hardhat } from "viem/chains";
 import { Bars3Icon, BugAntIcon } from "@heroicons/react/24/outline";
-import { ArrowDownTrayIcon, ArrowPathIcon, ArrowUpTrayIcon, PhotoIcon } from "@heroicons/react/24/outline";
+import { CircleStackIcon, InboxStackIcon } from "@heroicons/react/24/outline";
 import { FaucetButton, RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 import { useOutsideClick, useTargetNetwork } from "~~/hooks/scaffold-eth";
 
@@ -22,24 +22,14 @@ export const menuLinks: HeaderMenuLink[] = [
     href: "/",
   },
   {
-    label: "My NFTs",
-    href: "/myNFTs",
-    icon: <PhotoIcon className="h-4 w-4" />,
+    label: "Staker UI",
+    href: "/staker-ui",
+    icon: <CircleStackIcon className="h-4 w-4" />,
   },
   {
-    label: "Transfers",
-    href: "/transfers",
-    icon: <ArrowPathIcon className="h-4 w-4" />,
-  },
-  {
-    label: "IPFS Upload",
-    href: "/ipfsUpload",
-    icon: <ArrowUpTrayIcon className="h-4 w-4" />,
-  },
-  {
-    label: "IPFS Download",
-    href: "/ipfsDownload",
-    icon: <ArrowDownTrayIcon className="h-4 w-4" />,
+    label: "Stake Events",
+    href: "/stakings",
+    icon: <InboxStackIcon className="h-4 w-4" />,
   },
   {
     label: "Debug Contracts",
@@ -108,7 +98,7 @@ export const Header = () => {
           </div>
           <div className="flex flex-col">
             <span className="font-bold leading-tight">SRE Challenges</span>
-            <span className="text-xs">Tokenization</span>
+            <span className="text-xs">Decentralized Staking App</span>
           </div>
         </Link>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">

@@ -106,7 +106,7 @@ const config: HardhatUserConfig = {
       accounts: [deployerPrivateKey],
     },
     baseSepolia: {
-      url: `https://base-sepolia.g.alchemy.com/v2/${providerApiKey}`,
+      url: "https://sepolia.base.org",
       accounts: [deployerPrivateKey],
     },
     scrollSepolia: {
@@ -121,8 +121,8 @@ const config: HardhatUserConfig = {
       url: "https://forno.celo.org",
       accounts: [deployerPrivateKey],
     },
-    celoSepolia: {
-      url: "https://forno.celo-sepolia.celo-testnet.org/",
+    celoAlfajores: {
+      url: "https://alfajores-forno.celo-testnet.org",
       accounts: [deployerPrivateKey],
     },
   },

@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = getMetadata({
-  title: "Tokenization | SpeedRunEthereum",
+  title: "Decentralized Staking | SpeedRunEthereum",
   description: "Built with 🏗 Scaffold-ETH 2",
 });
 
